@@ -12,7 +12,7 @@
     "surge": "^0.21.5"
   },
   "scripts": {
-    "start": "HTTPS=true react-scripts start",
+    "start": "react-scripts start",
     "build": "HTTPS=true react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -61,7 +61,6 @@ class App extends React.Component {
                         return;
                     }
                     response.json().then(function(data) {
-                        console.log(data);
                         //let localTime = new Date(data.daily[0].dt * 1000).toLocaleString("en-US", {timeZone: data.timezone});
                         self.setState({temp: Math.round(data.current.temp), feelsLike: Math.round(data.current.feels_like), min: Math.round(data.daily[0].temp.min), max: Math.round(data.daily[0].temp.max), info: data});
                     });
